@@ -40,3 +40,22 @@
     background-color: #39FF14;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .header{
+        padding: 0.6rem;
+    }
+
+    .navigation ul{
+        gap: 1rem;
+    }
+
+    .nav-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nav-icon .material-symbols-outlined{
+        font-size: 1.2rem;
+    }
+}

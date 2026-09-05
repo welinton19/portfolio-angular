@@ -3,11 +3,15 @@
     color: white;
     padding: 2rem;
     margin: 15rem 0;
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
-    margin-right: 50%;
-}
+    margin-right: 2%;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
 
 h2{
     font-size: 2rem;
@@ -20,6 +24,7 @@ h2{
     color: #39FF14;
     font-weight: inherit;
     font-family: inherit;
+    display: inline-block;
 }
 
 .letra{
@@ -43,10 +48,30 @@ h2{
 
 .terminal-container{
     display: flex;
-    margin-top: -15rem;
-    margin-left: 130%;
     justify-content: center;
-    align-items: right;
-    
+    align-items: center;
 }
 
+@media (max-width: 768px) {
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+
+    .terminal-container{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .chamada{
+        font-size: 1.1rem;
+    }
+
+    .sobre p{
+        font-size: 0.95rem;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+}

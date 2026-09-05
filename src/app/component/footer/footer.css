@@ -1,0 +1,49 @@
+.contato{
+    background-color: black;
+    color: #39FF14;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px solid #39FF14;
+}
+
+.contato h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.contato-lista{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.contato-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contato-item .material-symbols-outlined,
+.contato-item .devicon-linkedin-plain{
+    font-size: 1.4rem;
+    color: #39FF14;
+    transition: color 0.3s ease;
+}
+
+.contato-item:hover{
+    color: #39FF14;
+}
+
+
+
+@media (max-width: 600px) {
+    .contato-lista{
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}

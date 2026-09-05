@@ -5,3 +5,11 @@
     box-sizing: border-box;
     background-color: Black;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
