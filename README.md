@@ -1,59 +1,57 @@
-# Portfolio
+💻 Portfólio — Welinton Gomes
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+Portfólio pessoal desenvolvido em Angular, com identidade visual neon (verde/preto) inspirada em terminal, para apresentar minha trajetória, habilidades e projetos como desenvolvedor Full Stack.
 
-## Development server
+🔗 Acesse: [em breve — link do deploy]
 
-To start a local development server, run:
+🚀 Tecnologias
+Angular (standalone components)
+TypeScript
+Signals (Angular Signals API)
+CSS Grid / Flexbox
+Material Symbols e Devicon (ícones)
+✨ Funcionalidades
+Header fixo com navegação por âncoras (scroll suave até cada seção)
+Seção Sobre com nome animado (efeito de digitação letra por letra) e scroll reveal via IntersectionObserver
+Terminal interativo animado, simulando comandos (whoami, cat sobre.txt, skills --list, status) digitados em tempo real
+Seção Habilidades em grid de cards com ícones das tecnologias
+Seção Projetos com cards padronizados, consumindo uma lista de projetos e links externos
+Footer de contato com ícones de e-mail, telefone e LinkedIn
+Totalmente responsivo, com breakpoints para tablet e mobile
+🏗️ Estrutura de componentes
+app/
+├── component/
+│   ├── header/       → Navegação fixa com ícones
+│   ├── sobre/         → Apresentação pessoal + animação do nome
+│   ├── terminal/       → Terminal animado (usado dentro do Sobre)
+│   ├── skills/         → Grid de habilidades técnicas
+│   ├── projetos/       → Grid de projetos com cards
+│   └── contato/       → Footer com informações de contato
+└── app.ts / app.html   → Composição de todos os componentes
 
-```bash
+Cada seção foi construída como um componente standalone independente, favorecendo organização, reuso e manutenção do código.
+
+🖥️ Projetos em destaque
+Fintech — API .NET 10 + app mobile .NET MAUI
+Fintech-Blazor — Interface web em Blazor WebAssembly
+▶️ Como rodar o projeto
+bash
+# Clone o repositório
+git clone https://github.com/welinton19/portfolio-angular.git
+
+# Acesse a pasta do projeto
+cd portfolio-angular
+
+# Instale as dependências
+npm install
+
+# Execute em modo de desenvolvimento
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse http://localhost:4200 no navegador.
 
-## Code scaffolding
+👨‍💻 Sobre mim
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Desenvolvedor Full Stack com foco em .NET/C# e Angular, formado em Análise e Desenvolvimento de Sistemas pela FIAP. Este portfólio reúne minha trajetória e os projetos desenvolvidos ao longo do meu processo de aprendizado.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desenvolvido por Welinton Gomes
