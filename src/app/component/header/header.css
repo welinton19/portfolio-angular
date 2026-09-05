@@ -1,0 +1,42 @@
+.header{
+    background-color: black;
+    color: #39FF14;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #39FF14;
+    z-index: 1000;
+    filter: blur(0.5px);
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #39FF14;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon:hover{
+    background-color: #39FF14;
+    cursor: pointer;
+}

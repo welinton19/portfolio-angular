@@ -1,0 +1,52 @@
+.sobre{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin: 15rem 0;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 50%;
+}
+
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #39FF14;
+}
+
+.gomes{
+    font-size: inherit;
+    color: #39FF14;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+.letra{
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.letra.visivel{
+    opacity: 1;
+}
+
+.cta{
+    color: #39FF14;
+    font-weight: 500;
+    font-style: italic;
+    border-top: 1px solid rgba(57, 255, 20, 0.3);
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+.terminal-container{
+    display: flex;
+    margin-top: -15rem;
+    margin-left: 130%;
+    justify-content: center;
+    align-items: right;
+    
+}
+

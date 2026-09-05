@@ -1,0 +1,13 @@
+<div class="projetos">
+    <h2 class="projetos-titulo">PROJETOS</h2>
+    <div class="projetos-grid">
+        <div class="projeto-card" *ngFor="let projeto of projetos">
+            <!-- <img class="projeto-imagem" [src]="projeto.imagem" [alt]="projeto.nome"> -->
+            <h3 class="projeto-nome">{{ projeto.nome }}</h3>
+            <p class="projeto-descricao">{{ projeto.descricao }}</p>
+            <div class="projeto-links">
+                <a *ngIf="projeto.link" [href]="projeto.link" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                <!--<a *ngIf="projeto.github" [href]="projeto.github" target="_blank" rel="noopener noreferrer">Ver Código</a> -->
+            </div>
+        </div>
+</div>

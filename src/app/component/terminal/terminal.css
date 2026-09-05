@@ -1,0 +1,74 @@
+.terminal{
+    background-color: #0d0d0d;
+    border: 1px solid #39FF14;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.15);
+}
+
+.terminal-header{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #222;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red{ background-color: #ff5f56; }
+.dot-yellow{ background-color: #ffbd2e; }
+.dot-green{ background-color: #27c93f; }
+
+.terminal-title{
+    color: #888;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.terminal-body{
+    padding: 1rem;
+    min-height: 220px;
+}
+
+.linha{
+    margin-bottom: 0.6rem;
+}
+
+.comando-linha{
+    display: flex;
+    gap: 0.4rem;
+}
+
+.prompt{
+    color: #39FF14;
+    font-weight: bold;
+}
+
+.comando{
+    color: #e0e0e0;
+}
+
+.resposta{
+    color: #888;
+    padding-left: 1rem;
+}
+
+.cursor{
+    display: inline-block;
+    width: 8px;
+    height: 1.1rem;
+    background-color: #39FF14;
+    animation: piscar 0.8s step-end infinite;
+}
+
+@keyframes piscar{
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}

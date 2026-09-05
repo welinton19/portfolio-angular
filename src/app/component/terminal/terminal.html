@@ -1,0 +1,24 @@
+<div class="terminal">
+    <div class="terminal-header">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">welinton@portfolio: ~</span>
+    </div>
+
+    <div class="terminal-body">
+        <div class="linha" *ngFor="let linha of linhasFinalizadas()">
+            <div class="comando-linha">
+                <span class="prompt">{{ linha.prompt }} $</span>
+                <span class="comando">{{ linha.comando }}</span>
+            </div>
+            <div class="resposta" *ngFor="let r of linha.resposta">{{ r }}</div>
+        </div>
+
+        <div class="comando-linha" *ngIf="linhasFinalizadas().length < linhas.length">
+            <span class="prompt">~ $</span>
+            <span class="comando">{{ textoExibido() }}</span>
+            <span class="cursor"></span>
+        </div>
+    </div>
+</div>
