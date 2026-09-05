@@ -1,24 +1,23 @@
 <section class="sobre" #sobreSection>
-    <h2>WELINTON 
-        <span class="gomes">
-            <span *ngFor="let letra of letras; let i = index" 
-                  class="letra" 
-                  [class.visivel]="visiveis()[i]">
-                {{ letra }}
+    <div class="sobre-texto">
+        <h2>WELINTON 
+            <span class="gomes">
+                <span *ngFor="let letra of letras; let i = index" 
+                      class="letra" 
+                      [class.visivel]="visiveis()[i]">
+                    {{ letra }}
+                </span>
             </span>
-        </span>
-    </h2>
+        </h2>
 
-    <h3 class="chamada">Desenvolvedor Full Stack .NET/C# e Angular</h3>
-    
-    <p>Minha jornada no desenvolvimento começou com curiosidade e virou propósito. Formado em Análise e Desenvolvimento de Sistemas pela FIAP, hoje atuo como desenvolvedor Full Stack, com foco em .NET/C# no back-end e Angular no front-end. Entre projetos pessoais, estudos na Alura e muita prática, venho construindo uma base sólida para minha carreira — e esse portfólio é prova disso.</p>
+        <h3 class="chamada">Desenvolvedor Full Stack .NET/C# e Angular</h3>
+        
+        <p>Minha jornada no desenvolvimento começou com curiosidade e virou propósito. Formado em Análise e Desenvolvimento de Sistemas pela FIAP, hoje atuo como desenvolvedor Full Stack, com foco em .NET/C# no back-end e Angular no front-end. Entre projetos pessoais, estudos na Alura e muita prática, venho construindo uma base sólida para minha carreira — e esse portfólio é prova disso.</p>
 
-    
-    <p class="cta">Estou em busca da minha primeira oportunidade como desenvolvedor, pronto para aplicar tudo que venho aprendendo em um time e transformar código em soluções que importam.</p>
+        <p class="cta">Estou em busca da minha primeira oportunidade como desenvolvedor, pronto para aplicar tudo que venho aprendendo em um time e transformar código em soluções que importam.</p>
+    </div>
 
-    
     <div class="terminal-container">
        <app-terminal></app-terminal>
     </div>
 </section>
-
